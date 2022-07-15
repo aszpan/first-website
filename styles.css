@@ -1,4 +1,9 @@
+/* Universal selector that sets all font to monospace */
+* {
+    font-family: monospace;
+}
 
+/* Element selector */
 li {
     
     display: inline;
@@ -9,9 +14,41 @@ li {
 
   nav {
     background-color: lightcoral;
+    text-align:right;
+    border:15px solid lightblue;
 
   }
 
+  p,
+  h2 {
+    text-align: center;
+  }
+
+  /* Class selector */
 .text-center{
     text-align: center;
+}
+
+.container {
+    width: 650px;
+    height: 350px;
+    margin: 20px auto;
+    
+  }
+
+#image-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+    /* TODO: Add a margin property */
+   
+    padding: 20px;
+    /* TODO: Add a border property */
+    border: 9px solid darkblue;
+}
+
+#info{
+    text-align: center;
+    
 }
